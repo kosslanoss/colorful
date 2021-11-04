@@ -3,7 +3,56 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  &__list-item:not(:last-child) {
+    padding-right: 35px;
+  }
+
+  &__list-link {
+    color: $title;
+    padding-bottom: 5px;
+    transition: color 0.5s, border 0.5s;
+
+    &:hover {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+
+  &__list-link--active {
+    color: $accent;
+    font-weight: 700;
+    border-bottom: 1px solid $accent;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__link:not(:last-child) {
+    padding-right: 25px;
+  }
+
+  &__num {
+    border-radius: 50%;
+    color: $white
+  }
+}
 
 
 @import 'media';
