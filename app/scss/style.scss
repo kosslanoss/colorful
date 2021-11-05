@@ -9,6 +9,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -26,7 +27,7 @@
   &__list-link {
     color: $title;
     padding-bottom: 5px;
-    transition: color 0.5s, border 0.5s;
+    transition: color 0.3s, border 0.5s;
 
     &:hover {
       color: $accent;
@@ -44,13 +45,27 @@
 .user-nav {
   display: flex;
 
+  &__link {
+    position: relative;  
+  }
+
   &__link:not(:last-child) {
     padding-right: 25px;
+    
   }
 
   &__num {
     border-radius: 50%;
-    color: $white
+    color: $white;
+    width: 20px;
+    height: 20px;
+    background-color: $accent;
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: center;
   }
 }
 
