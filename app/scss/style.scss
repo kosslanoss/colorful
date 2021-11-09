@@ -158,7 +158,7 @@
   &__form-input {
     background-color: $white;
     padding: 10px 15px 12px 15px;  
-    max-width: 320px;
+    max-width: 310px;
     width: 100%;
     border: none;
     box-shadow: 0px 7px 20px 0px rgb(192 192 192 / 30%);
@@ -166,17 +166,6 @@
     &::placeholder {
       color: $default;
     }
-  }
-
-  &__form-btn {
-    text-transform: uppercase;
-    color: $white;
-    background-color: $accent;
-    border: none;
-    padding: 11px 30px;
-    box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
-    
-
   }
 }
 
