@@ -23,6 +23,23 @@ body {
   padding: 0 15px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  
+}
+
 .button {
   text-transform: uppercase;
   color: $white;
@@ -37,7 +54,7 @@ body {
     background-color: $accent-hover;
   }
   &:active {
-    background-color: $white;
+    background-color: $firm;
   }
   &:focus {
     box-shadow: inset 0px 3px 0px rgb(0 1 1 / 10%);

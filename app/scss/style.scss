@@ -69,6 +69,16 @@
   }
 }
 
+.top-slider {
+  
+  &__content {
+    background-image: url(../images/banner1.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+  }
+      
+}
+
 .footer {
   background-color: $grey-lighter;
 }
