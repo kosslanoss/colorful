@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -72,6 +73,7 @@
 .top-slider {
   
   &__content {
+    height: calc(100vh - 119px);
     background-image: url(../images/banner1.png);
     background-position: 50% 0%;
     background-repeat: no-repeat;
