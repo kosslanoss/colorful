@@ -179,16 +179,16 @@
 
 .top-slider {
   background-color: $bg;
-  padding-top: 65px;
+  padding-top: 30px;
   
   &__container {
     max-width: 1230px;
   }
 
   &__content {
-    height: calc(100vh - 184px);
+    height: calc(100vh - 149px);
     background-image: url(../images/banner1.png);
-    background-position: 108% 0%;
+    background-position: 105% 0%;
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 15px;
@@ -217,7 +217,57 @@
     padding: 15px 27px;
   }
 
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    left: 45%;
+    position: absolute;
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        border-radius: 50%;
+        border: 3px solid transparent;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &.slick-active {
+        transition: border-color 0.5s;
+
+        button {
+          border-color: $firm;
+          transition: background-color 0.5s;
+
+          &::before {
+            background-color: $firm;
+          }
+        }
+      }
+    }
+  }
 }
+
+
 
 
 @import 'media';
