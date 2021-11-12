@@ -37,27 +37,10 @@ body {
 }
 
 .title {
-  
+  color: $title;
+  font-size: 22px;
+  line-height: 1.6;
+  @extend %roboto-400;
 }
 
-.button {
-  text-transform: uppercase;
-  color: $white;
-  background-color: $accent;
-  border: none;
-  padding: 11px 30px;
-  box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
-  outline: transparent;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-
-  &:hover {
-    background-color: $accent-hover;
-  }
-  &:active {
-    background-color: $firm;
-  }
-  &:focus {
-    color: rgba(255, 255, 255, .3);
-  }
-}
 
