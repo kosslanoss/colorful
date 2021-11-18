@@ -130,6 +130,13 @@
     margin-right: 30px;
   }
 
+  &__title {
+    font-size: 22px;
+    line-height: 1.6;
+    @extend %roboto-400;
+    color: $title;
+  }
+
   &__link {
     margin-bottom: 10px;
     display: block;
@@ -266,6 +273,104 @@
     }
   }
 }
+
+.categories-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+
+  &__item {
+    padding: 60px 30px;
+    max-width: 365px;
+    box-shadow: 20px 0px 60px 0px rgb(202 202 202 / 35%);
+  }
+
+  &__title {
+    padding: 30px 0 20px;
+    font-size: 22px;
+    line-height: 1.2;
+    @extend %roboto-400;
+    color: $title;
+  }
+}
+
+.categories {
+  padding: 120px 0;
+  background-color: $white;
+
+  &__items {
+    display: grid;
+    min-height: 635px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-gap: 35px;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 35px;
+    padding-left: 40px;
+
+    &:nth-child(1) {
+      grid-row: span 2;
+
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $red;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 440px;
+      padding-top: 0;
+
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $red;
+      }
+    }
+
+    &:nth-child(3) {
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $blue-dark;
+      }
+    }
+
+    &:nth-child(4) {
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $firm;
+      }
+    }
+  }
+
+  &__item-subtitle {
+    margin-bottom: 5px;
+  }
+
+  &__item-title {
+    color: $title;
+    margin-bottom: 15px;
+    font-size: 22px;
+    @extend %roboto-700;
+  }
+
+  &__item-link {
+    text-transform: uppercase;
+    color: $title;
+    transition: color 0.3s;
+  }
+}
+
+
 
 
 
