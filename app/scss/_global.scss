@@ -23,3 +23,33 @@ body {
   padding: 0 15px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  color: $title;
+  font-size: 48px;
+  line-height: 1.6;
+  @extend %roboto-700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text {
+  max-width: 570px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+

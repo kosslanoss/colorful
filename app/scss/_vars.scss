@@ -1,10 +1,16 @@
 $accent: #1BCDD9;
-$default: #8d8d8d;
+$default: #465464;
 $title: #29282d;
+$accent-hover: #15bdc9;
+$firm: #D293C1;
+$bg: #f6f6f6;
 
 $white: #ffffff;
 
-$grey-lighter: #f6f6f6;
+$red: #DA052D;
+
+$blue-dark: #4688BB;
+
 $grey-light: #ececec;
 
 %quicksand-500 {
@@ -25,4 +31,25 @@ $grey-light: #ececec;
 %roboto-700 {
   font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
+}
+
+%btn {
+  text-transform: uppercase;
+  color: $white;
+  background-color: $accent;
+  border: none;
+  padding: 11px 30px;
+  box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
+  outline: transparent;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: $accent-hover;
+  }
+  &:active {
+    background-color: $firm;
+  }
+  &:focus {
+    color: rgba(255, 255, 255, .3);
+  }
 }

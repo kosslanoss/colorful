@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -26,7 +27,8 @@
 
   &__list-link {
     color: $title;
-    padding-bottom: 5px;
+    padding: 1px 2px 5px;
+    @extend %roboto-400;
     transition: color 0.3s, border 0.5s;
 
     &:hover {
@@ -69,7 +71,7 @@
 }
 
 .footer {
-  background-color: $grey-lighter;
+  background-color: $bg;
 }
 
 .footer-top {
@@ -128,6 +130,13 @@
     margin-right: 30px;
   }
 
+  &__title {
+    font-size: 22px;
+    line-height: 1.6;
+    @extend %roboto-400;
+    color: $title;
+  }
+
   &__link {
     margin-bottom: 10px;
     display: block;
@@ -145,10 +154,6 @@
 
   &__title {
     margin-bottom: 28px;
-    color: $title;
-    font-size: 22px;
-    line-height: 1.6;
-    @extend %roboto-400;
   }
 
   &__text {
@@ -158,26 +163,19 @@
   &__form-input {
     background-color: $white;
     padding: 10px 15px 12px 15px;  
-    max-width: 320px;
+    max-width: 310px;
     width: 100%;
     border: none;
     box-shadow: 0px 7px 20px 0px rgb(192 192 192 / 30%);
 
     &::placeholder {
       color: $default;
-    }
+    }  
   }
 
   &__form-btn {
-    text-transform: uppercase;
-    color: $white;
-    background-color: $accent;
-    border: none;
-    padding: 11px 30px;
-    box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
-    
-
-  }
+      @extend %btn;
+    }
 }
 
 .footer-copy {
@@ -185,6 +183,196 @@
   text-align: center;
   font-size: 12px;
 }
+
+.top-slider {
+  background-color: $bg;
+  padding-top: 30px;
+  
+  &__container {
+    max-width: 1230px;
+  }
+
+  &__content {
+    height: calc(100vh - 149px);
+    background-image: url(../images/banner1.png);
+    background-position: 105% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 15px;
+    padding-top: 100px;
+  }
+
+  &__title {
+    max-width: 670px;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 58px;
+    line-height: 1.2;
+    color: $title;
+    @extend %roboto-700;
+  }
+
+  &__text {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 55px;
+    display: block;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 15px 27px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    left: 45%;
+    position: absolute;
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        border-radius: 50%;
+        border: 3px solid transparent;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &.slick-active {
+        transition: border-color 0.5s;
+
+        button {
+          border-color: $firm;
+          transition: background-color 0.5s;
+
+          &::before {
+            background-color: $firm;
+          }
+        }
+      }
+    }
+  }
+}
+
+.categories-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+
+  &__item {
+    padding: 60px 30px;
+    max-width: 365px;
+    box-shadow: 20px 0px 60px 0px rgb(202 202 202 / 35%);
+  }
+
+  &__title {
+    padding: 30px 0 20px;
+    font-size: 22px;
+    line-height: 1.2;
+    @extend %roboto-400;
+    color: $title;
+  }
+}
+
+.categories {
+  padding: 120px 0;
+  background-color: $white;
+
+  &__items {
+    display: grid;
+    min-height: 635px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-gap: 35px;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 35px;
+    padding-left: 40px;
+
+    &:nth-child(1) {
+      grid-row: span 2;
+
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $red;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 440px;
+      padding-top: 0;
+
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $red;
+      }
+    }
+
+    &:nth-child(3) {
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $blue-dark;
+      }
+    }
+
+    &:nth-child(4) {
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $firm;
+      }
+    }
+  }
+
+  &__item-subtitle {
+    margin-bottom: 5px;
+  }
+
+  &__item-title {
+    color: $title;
+    margin-bottom: 15px;
+    font-size: 22px;
+    @extend %roboto-700;
+  }
+
+  &__item-link {
+    text-transform: uppercase;
+    color: $title;
+    transition: color 0.3s;
+  }
+}
+
+
+
+
 
 
 @import 'media';
