@@ -396,16 +396,28 @@
     background-position: center center;
   }
 
+  &__play:hover {
+    transform: scale(125%);
+  }
+
   &__content {
     max-width: 570px;
   }
 
   &__subtitle {
+    padding-top: 75px;
     text-transform: uppercase;
-    color: $firm;
+    color: $red;
     @extend %quicksand-500;
     font-size: 22px;
+    margin-bottom: 5px;
   }
+  
+  &__title {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
   &__link {
     @extend %btn;
   }
