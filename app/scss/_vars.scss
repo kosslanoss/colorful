@@ -1,5 +1,5 @@
 $accent: #1BCDD9;
-$default: #465464;
+$default: #8d8d8d;
 $title: #29282d;
 $accent-hover: #15bdc9;
 $firm: #D293C1;
@@ -42,6 +42,7 @@ $grey-light: #ececec;
   box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
   outline: transparent;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  display: inline-block;
 
   &:hover {
     background-color: $accent-hover;
