@@ -17,6 +17,10 @@ body {
   flex-grow: 1;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,6 +52,8 @@ body {
 
 .text {
   margin: 0 auto 55px;
+  max-width: 570px;
+  text-align: center;
 }
 
 
