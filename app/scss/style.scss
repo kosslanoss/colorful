@@ -400,15 +400,6 @@
   &__content {
     max-width: 570px;
   }
-
-  &__subtitle {
-    padding-top: 75px;
-    text-transform: uppercase;
-    color: $red;
-    @extend %quicksand-500;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
   
   &__title {
     text-align: left;
@@ -438,8 +429,6 @@
     margin-bottom: 60px;
   }
 }
-
-
 
 .product-item {
   max-width: 370px;
@@ -555,7 +544,68 @@
   margin: 0 auto;
 }
 
+.promo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 85px 0 160px;
+  margin-bottom: 120px;
 
+  &__wrapper {
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+  }
+    
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__clock {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 60px;
+  }
+
+  &__clock-item {
+    background-color: $white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 30%);
+
+    span {
+      @extend %roboto-700;
+      font-size: 48px;
+      color: $title;
+      margin: 7px 2px 10px;
+    }
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
+
+.partners {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 30%;
+    }
+  }
+}
 
 
 

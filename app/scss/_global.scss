@@ -50,6 +50,15 @@ body {
   margin-bottom: 10px;
 }
 
+.subtitle {
+  padding-top: 75px;
+  text-transform: uppercase;
+  color: $red;
+  @extend %quicksand-500;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
 .text {
   margin: 0 auto 55px;
   max-width: 570px;
