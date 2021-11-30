@@ -184,6 +184,19 @@
   font-size: 12px;
 }
 
+.top {
+
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider {
   background-color: $bg;
   padding-top: 30px;
@@ -691,6 +704,59 @@
   }
 }
 
+.modal {
+  max-width: 570px;
+  margin: 0 auto 120px;
+  padding-top: 110px;
+  
+  &__links {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 22px;
+    @extend %roboto-400;
+    margin: 0 30px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+   margin-bottom: 35px;
+   display: block;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    height: 60px;
+    padding: 0 15px;
+    margin-top: 12px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    color: $white;
+    background-color: $title;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @extend %roboto-400;
+    cursor: pointer;
+  }
+
+  &__error {
+    color: $red;
+  }
+}
 
 
 

@@ -65,4 +65,49 @@ body {
   text-align: center;
 }
 
+.breadcrumbs {
+  display: inline-flex;
+  padding-left: 25px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/home-icon.svg);
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 3px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: $grey-dark;
+    padding-right: 40px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/angle-right.svg);
+      width: 9px;
+      height: 10px;
+      right: 15px;
+      top: 8px;
+    }
+    
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}
+
 
