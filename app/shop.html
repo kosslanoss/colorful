@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header header--404-page">
+<header class="header">
   <div class="container">
     <div class="header__wrapper">
         <a class="logo" href="#">
@@ -87,22 +87,46 @@
 </header>
 <main class="main">
 
-  <section class="page-404">
+  <section class="top">
+    <div class="top__container" style="background-image: url(images/top-container-bg.jpg);">
+      <div class="container">
+        <h2 class="title">
+          Shop page
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Shop page
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
     <div class="container">
-      <div class="page-404__wrapper" style="background-image: url(images/404.png);" width="600px" height="550px">
-        <div class="page-404__content">
-          <h4 class="page-404__title">
-            OPPS! Page Not Found!!
-          </h4>
-          <div class="page-404__text">
-            <p>
-              We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web
-              address not find incorrectly.
-            </p>
+      <div class="shop__wrapper">
+        <div class="shop__filters filter">
+          <div class="filter__search">
+            <h5 class="filter__search-title">search</h5>
+            <form class="filter__search-form" action="#">
+              <label class="filter__search-label" for="search"></label>
+                <input class="filter__search-input" type="text" name="search" id="search">
+              <button class="filter__search-btn" type="submit"></button>
+            </form>
           </div>
-          <a class="page-404__link" href="#">
-            BACK TO HOME
-          </a>
+
+        </div>
+        <div class="shop__content">
+
         </div>
       </div>
     </div>
