@@ -723,6 +723,7 @@
 
   &__link--active {
     color: $accent;
+    @extend %roboto-700;
   }
 
   &__label {
@@ -738,6 +739,11 @@
     height: 60px;
     padding: 0 15px;
     margin-top: 12px;
+    outline: transparent;
+  }
+
+  &__text {
+    margin-bottom: 30px;
   }
 
   &__btn {
@@ -751,6 +757,23 @@
     margin-bottom: 20px;
     @extend %roboto-400;
     cursor: pointer;
+    outline: transparent;
+    transition: background-color 0.3s,
+    color 0.3s,
+    box-shadow 0.3s;
+    display: inline-block;
+
+    &:hover {
+      background-color: $grey-dark
+    }
+
+    &:active {
+      background-color: $default
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, .3);
+    }
   }
 
   &__error {
@@ -758,7 +781,44 @@
   }
 }
 
+.page-404 {
+  padding: 110px 0 120px;
 
+  &__wrapper {
+    background-image: url(../images/404.png);
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position: center right;
+    position: relative;
+    height: 550px;
+  }
+
+  &__content {
+    max-width: 570px;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+  }
+
+  &__title {
+    color: $blue-darkest;
+    font-size: 48px;
+    line-height: 1.8;
+    @extend %roboto-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
 
 
 
