@@ -1163,6 +1163,7 @@
 }
 
 .filter-popular {
+  padding-bottom: 15px;
 
   &__label {
     display: inline-block;
@@ -1924,6 +1925,162 @@
     }
   }
 }
+
+.blog-one {
+
+  &__content {
+    max-width: 770px;
+  }
+
+  &__text {
+    padding: 30px;
+    border: 1px solid $grey-light;
+    border-top: none;
+    margin-bottom: 30px;
+
+    h5 {
+      @extend %roboto-400;
+      font-size: 22px;
+      color: $title;
+      margin-bottom: 20px;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    blockquote {
+      @extend %roboto-400;
+      font-size: 22px;
+      background-color: $bg;
+      border-left: 3px solid $red;
+      padding: 35px;
+      margin-bottom: 20px;
+      color: $title;
+    }
+
+    .blog-one__left-img {
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 10px;
+    }
+
+    .blog-one__right-img {
+      float: right;
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__info-link {
+    margin-right: 30px;
+    padding-left: 30px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/calendar.svg);
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__info-link--comments::before {
+    background-image: url(../images/icons/comment.svg);
+  }
+  
+  &__info-link--author::before {
+    background-image: url(../images/icons/user-red.svg);
+  }
+
+  &__comments {
+    border-bottom: 1px solid $grey-light;
+    margin-bottom: 35px;
+
+    .feedback__content-name {
+      @extend %roboto-700;
+    }
+    
+  }
+
+  &__comments-title {
+    color: $title;
+    @extend %roboto-700;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .comments-form {
+
+    &__title {
+      color: $title;
+      @extend %roboto-700;
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
+
+  .feedback-form__text-input {
+    width: 370px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 25px;
+  }
+
+  &__box-title {
+    text-transform: uppercase;
+    color: $title;
+    margin-right: 10px;
+    @extend %roboto-700;
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $grey-light;
+    display: flex;
+  }
+
+  &__author-img {
+    display: block;
+    margin-right: 30px;
+    object-fit: cover;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  &__author-name {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
 
 
 
