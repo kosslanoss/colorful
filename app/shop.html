@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful</title>
+  <link rel="icon" href="images/favicon-16.png" type="image/x-icon" sizes="16x16">
+  <link rel="icon" href="images/favicon-32.png" type="image/x-icon" sizes="32x32">
+  <link rel="icon" href="images/favicon-152.png" type="image/x-icon" sizes="152x152">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">
+                home
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--active" href="#">
+                shop
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="page.html">
+                page
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                blog
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#29282d" fill-rule="evenodd"
+                d="M1392.07,57.928a9.923,9.923,0,0,0-3.8-2.383,5.78,5.78,0,1,0-6.54,0A10.018,10.018,0,0,0,1375,65h1.56a8.44,8.44,0,0,1,16.88,0H1395A9.931,9.931,0,0,0,1392.07,57.928Zm-11.29-7.148A4.22,4.22,0,1,1,1385,55,4.222,4.222,0,0,1,1380.78,50.78Z"
+                transform="translate(-1375 -45)" />
+            </svg>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20" viewBox="0 0 20.03 20">
+              <path fill="#29282d" fill-rule="evenodd"
+                d="M1439.89,63.7l-5.81-5.81a7.944,7.944,0,1,0-1.18,1.178l5.81,5.81a0.417,0.417,0,0,0,.59,0l0.59-.589A0.421,0.421,0,0,0,1439.89,63.7Zm-11.96-4.533a6.25,6.25,0,1,1,6.25-6.25A6.254,6.254,0,0,1,1427.93,59.163Z"
+                transform="translate(-1420 -45)" />
+            </svg>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <path fill="#29282d" fill-rule="evenodd"
+                d="M1484.78,49.589a6.683,6.683,0,0,0-4.17-4.371c-1.71-.595-3.75,0-5.58,1.611-1.83-1.569-3.88-2.122-5.58-1.569a6.884,6.884,0,0,0-4.17,4.371c-0.47,1.57-.51,4.117,1.95,7.215,1.11,1.4,2.82,3.4,4.22,4.965,2.68,3.014,3.11,3.183,3.49,3.183h0.17c0.39,0,.77-0.168,3.45-3.224,1.41-1.613,3.11-3.609,4.22-4.966C1485.25,53.706,1485.25,51.159,1484.78,49.589Zm-3.28,6.2c-1.96,2.462-5.32,6.324-6.47,7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986,4.986,0,0,1,3.11-3.225c1.23-.467,2.9.169,4.43,1.655a0.84,0.84,0,0,0,1.06.126,0.447,0.447,0,0,0,.22-0.17c1.53-1.443,3.19-2.079,4.42-1.655a5.168,5.168,0,0,1,3.11,3.268C1483.71,51.8,1483.12,53.79,1481.5,55.784Z"
+                transform="translate(-1465.03 -45)" />
+            </svg>
+            <div class="user-nav__num">
+              <span>3</span>
+            </div>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+              <path fill="#29282d" fill-rule="evenodd"
+                d="M1527.44,65a2.724,2.724,0,1,1,2.74-2.724A2.738,2.738,0,0,1,1527.44,65Zm0-3.814a1.09,1.09,0,1,0,1.09,1.09A1.094,1.094,0,0,0,1527.44,61.183Zm1.75-2.806h-12.81a0.823,0.823,0,0,1-.8-0.628l-2.68-11.115h-2.06a0.817,0.817,0,1,1,0-1.634h2.71a0.824,0.824,0,0,1,.8.627l0.74,3.078h16.1a0.818,0.818,0,0,1,.8,1.014l-2,8.038A0.822,0.822,0,0,1,1529.19,58.377Zm-12.16-1.635h11.52l1.59-6.4h-14.65ZM1517.48,65a2.724,2.724,0,1,1,2.74-2.724A2.738,2.738,0,0,1,1517.48,65Zm0-3.814a1.09,1.09,0,1,0,1.09,1.09A1.094,1.094,0,0,0,1517.48,61.183Z"
+                transform="translate(-1510 -45)" />
+            </svg>
+            <div class="user-nav__num">
+              <span>7</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="top">
+      <div class="top__container" style="background-image: url(images/top-container-bg.jpg);">
+        <div class="container">
+          <h2 class="title">
+            Shop page
+          </h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Shop page
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__wrapper">
+          <div class="shop__filters filter">
+            <div class="filter__item filter-search">
+              <h5 class="filter__title">Пошук</h5>
+              <form class="filter-search__form" action="#">
+                <label class="filter-search__label" for="search"></label>
+                <input class="filter-search__input" type="text" name="search" id="search" placeholder="Що шукаємо....">
+                <button class="filter-search__btn" type="submit"></button>
+              </form>
+            </div>
+            <div class="filter__item filter-price">
+              <h5 class="filter__title">Ціна</h5>
+              <form class="filter-price__form" action="#">
+                <label class="filter-price__label" for="filter-price"></label>
+                <input class="filter-price__input" type="text" name="filter-price" id="filter-price" value=""
+                  data-min="0" data-max="999" data-from="200" data-to="800" />
+                <label class="filter-price__label">
+                  <span>Price:
+                    <span class="filter-price__from"></span> грн -
+                    <span class="filter-price__to"></span> грн
+                  </span>
+                  <button class="filter-price__btn" type="submit">filter</button>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-color">
+              <h5 class="filter__title">Колір волосся</h5>
+              <form class="filter-color__form" action="#">
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Блонд (15)</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Чорне (12)</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Руде (13)</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Русе (09)</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-type">
+              <h5 class="filter__title">Тип волосся</h5>
+              <form class="filter-type__form" action="#">
+                <label class="filter-type__label">
+                  <input class="filter-type__input" type="checkbox">
+                  <span class="filter-type__checkbox"></span>
+                  <span class="filter-type__text">Жирне</span>
+                </label>
+                <label class="filter-type__label">
+                  <input class="filter-type__input" type="checkbox">
+                  <span class="filter-type__checkbox"></span>
+                  <span class="filter-type__text">Сухе</span>
+                </label>
+                <label class="filter-type__label">
+                  <input class="filter-type__input" type="checkbox">
+                  <span class="filter-type__checkbox"></span>
+                  <span class="filter-type__text">Нормальне</span>
+                </label>
+                <label class="filter-type__label">
+                  <input class="filter-type__input" type="checkbox">
+                  <span class="filter-type__checkbox"></span>
+                  <span class="filter-type__text">Фарбоване</span>
+                </label>
+                <label class="filter-type__label">
+                  <input class="filter-type__input" type="checkbox">
+                  <span class="filter-type__checkbox"></span>
+                  <span class="filter-type__text">Освітлене</span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-category">
+              <h5 class="filter__title">Категорії</h5>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Жіночі</span>
+                    <span>56</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Чоловічі</span>
+                    <span>38</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Дитячі</span>
+                    <span>05</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>Нова Колекція</span>
+                    <span>18</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Популярні</span>
+                    <span>08</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Акційні</span>
+                    <span>12</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-popular">
+              <h5 class="filter__title">Популярні тегі</h5>
+              <form class="filter-popular__form" action="#">
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">Estel</span>
+                </label>
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">Термозахист</span>
+                </label>
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">Бальзам для волосся</span>
+                </label>
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">Фанола</span>
+                </label>
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">Гоління</span>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="shop-content">
+            <div class="shop-content__filter">
+              <div class="shop-content__filter-buttons">
+                <span>Вигляд</span>
+                <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+                  <svg width="15px" height="15px">
+                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                      d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z" />
+                  </svg>
+                </button>
+                <button class="shop-content__filter-btn button-list">
+                  <svg width="20px" height="15px">
+                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                      d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="shop-content__filter-selects">
+                <form class="shop-content__filter-form" action="#">
+                  <select class="shop-content__filter-sort select__style">
+                    <option value="">Сортувати автоматично</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                  <select class="shop-content__filter-show select__style">
+                    <option value="">Показати 9</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </form>
+              </div>
+
+            </div>
+            <div class="shop-content__inner">
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/1.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Випрямляючий флюїд Fanola Tools
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Інтенсивно зволожує та полегшує укладку волосся. Дисциплінує та випрямляє волосся пом'якщуючи та
+                        насичуючи блиском.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/2.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      ORO Маска з ефектом ламінірування
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Інтенсивна тонуюча маска для натурального освітленого та пофарбованого волосся з мікрочастинами
+                        золота, кератином та маслом аргани.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/3.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Багатофункціональний захисний спрей No Yellow
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        З винним екстрактом та функцією захисного бар'єру для світлого, освітленого, сидого та
+                        меліруваного волосся.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/4.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Шампунь для жирної шкіри голови
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Шампунь з натуральними екстрактами оліви, хни, бакопи, нима та насіння сезама. Нормалізує роботу
+                        сальных желіз, зменшуючи виділення жиру.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/5.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Лосьон для жирної шкіри голови
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Інтенсивний лосьон який збалансовує виділення шкірного сала. Нормалізує гідробаланс шкіри голови
+                        насичуючи шкіру кислородом виконуючи себорегулюючий
+                        еффект.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/6.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Шампунь проти випадання волосся
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Відновлює природній баланс шкіри голови, попереджає та зупиняє випадання волосся.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/7.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Лосьон проти випадання волосся
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Попереджає та зупиняє випадання волосся, а також
+                        стимулює його подальший ріст.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/8.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Маска для реконструкції волосся
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$25.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Рослинний комплекс Ayurvedica Mix відновлює кислотний баланс та укріплює структуру пошкодженого волосся.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/9.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Гребінець Spider 1503
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$10.00</div>
+                      <div class="product-item__old-price">$30.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        I LOVE MY HAIR Spider 1503. Комбінована щітина призначена для розплутування волосся.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__image" src="/images/product/10.jpg" alt="Продукт">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.5">
+                    </div>
+                    <h4 class="product-item__title">
+                      Estel professional Подарунковий набір ESTEL LUXURY BLOND HAUTE COUTURE
+                    </h4>
+                    <div class="product-item__prices">
+                      <div class="product-item__new-price">$28.00</div>
+                      <div class="product-item__old-price">$40.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <div class="product-item__text">
+                      <p>
+                        Шампунь, бальзам та олія-догляд для волосся ESTEL LUXURY BLOND ESTEL HAUTE COUTURE.
+                      </p>
+                    </div>
+                    <button class="product-item__btn">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="pagination">
+              <a class="pagination__prev pagination__arrows" href="#">
+                previous
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link" href="#">....</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">10</a>
+                </li>
+              </ul>
+              <a class="pagination__next pagination__arrows" href="#">
+                next
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item footer-top__contacts">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип">
+          </a>
+          <div class="footer-top__adress">
+            No. 342 - London Oxford Street,
+            012 United States
+          </div>
+          <a class="footer-top__email" href="mailto:yourmail@gmail.com">
+            yourmail@gmail.com
+          </a>
+          <a class="footer-top__phone" href="tel:+02838388393">
+            +0283 838 8393
+          </a>
+          <div class="footer-top__social">
+            <a class="footer-top__social-link" href="#">
+              <svg width="23" height="23">
+                <path
+                  d="M7.2946 1.03042C6.13872 1.083 5.34951 1.26654 4.65881 1.53525C3.94465 1.8127 3.33946 2.18443 2.73582 2.78841C2.1318 3.39238 1.76066 3.9981 1.48337 4.71267C1.21481 5.40395 1.03118 6.1936 0.978627 7.34994C0.92569 8.5088 0.913086 8.8786 0.913086 11.8294C0.913086 14.7802 0.92569 15.1498 0.978627 16.3089C1.03118 17.4652 1.21481 18.2549 1.48337 18.9457C1.76066 19.6603 2.1318 20.2664 2.73582 20.8702C3.33946 21.4744 3.94465 21.8457 4.65881 22.1236C5.34951 22.3923 6.13872 22.5758 7.2946 22.6284C8.45282 22.6814 8.82241 22.694 11.7714 22.694C14.7205 22.694 15.0901 22.6814 16.2483 22.6284C17.404 22.5758 18.1932 22.3923 18.8843 22.1236C19.5979 21.8457 20.2037 21.4744 20.8073 20.8702C21.4109 20.2664 21.7819 19.6603 22.0595 18.9457C22.3279 18.2549 22.5117 17.4652 22.5643 16.3089C22.6172 15.1498 22.6294 14.7802 22.6294 11.8294C22.6294 8.8786 22.6172 8.5088 22.5643 7.34994C22.5117 6.1936 22.3279 5.40395 22.0595 4.71267C21.7819 3.9981 21.4109 3.39238 20.8073 2.78841C20.2037 2.18443 19.5979 1.8127 18.8843 1.53525C18.1932 1.26654 17.404 1.083 16.2483 1.03042C15.0901 0.977649 14.7205 0.964844 11.7714 0.964844C8.82241 0.964844 8.45282 0.977649 7.2946 1.03042ZM7.38352 20.6721C6.32478 20.624 5.74984 20.4474 5.36745 20.2984C4.86038 20.1009 4.49894 19.8656 4.11888 19.4855C3.73882 19.1054 3.50361 18.7436 3.3064 18.2364C3.15768 17.8536 2.98103 17.2784 2.93255 16.219C2.88039 15.0733 2.86914 14.7295 2.86914 11.8288C2.86914 8.92767 2.88039 8.58426 2.93255 7.43839C2.98103 6.37926 3.15768 5.804 3.3064 5.4212C3.50361 4.91404 3.73882 4.55201 4.11888 4.17193C4.49894 3.79185 4.86038 3.55612 5.36745 3.35938C5.74984 3.21057 6.32478 3.03363 7.38352 2.98512C8.52835 2.93293 8.87196 2.92188 11.7711 2.92188C14.6702 2.92188 15.0136 2.93293 16.159 2.98512C17.2174 3.03363 17.7923 3.21057 18.1751 3.35938C18.682 3.55612 19.0436 3.79185 19.4235 4.17193C19.8035 4.55201 20.0385 4.91404 20.2358 5.4212C20.3845 5.804 20.5613 6.37926 20.6098 7.43839C20.662 8.58426 20.6726 8.92767 20.6726 11.8288C20.6726 14.7295 20.662 15.0733 20.6098 16.219C20.5613 17.2784 20.3845 17.8536 20.2358 18.2364C20.0385 18.7436 19.8035 19.1054 19.4235 19.4855C19.0436 19.8656 18.682 20.1009 18.1751 20.2984C17.7923 20.4474 17.2174 20.624 16.159 20.6721C15.014 20.7247 14.6706 20.7355 11.7711 20.7355C8.87196 20.7355 8.52835 20.7247 7.38352 20.6721ZM16.2646 6.03016C16.2646 6.74996 16.8479 7.33396 17.5677 7.33396C18.2873 7.33396 18.8706 6.74996 18.8706 6.03016C18.8706 5.30997 18.2873 4.72656 17.5677 4.72656C16.8479 4.72656 16.2646 5.30997 16.2646 6.03016ZM6.19531 11.8292C6.19531 14.9105 8.69188 17.4081 11.7713 17.4081C14.851 17.4081 17.3472 14.9105 17.3472 11.8292C17.3472 8.74777 14.851 6.25 11.7713 6.25C8.69188 6.25 6.19531 8.74777 6.19531 11.8292ZM8.15234 11.8286C8.15234 9.82843 9.77264 8.20703 11.7716 8.20703C13.7706 8.20703 15.3911 9.82843 15.3911 11.8286C15.3911 13.8289 13.7706 15.4501 11.7716 15.4501C9.77264 15.4501 8.15234 13.8289 8.15234 11.8286Z"
+                  fill="#8d8d8d" />
+              </svg>
+              <span class="footer-top__social-instagram">
+                koss_tverdokhlib
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            Useful Links
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                About Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Help & Support
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            My Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My Account
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My Cart
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My WIshlist lore
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Registration
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Check Out
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__item-form">
+          <h6 class="footer-top__title">
+            Subscribe Our Newsletter
+          </h6>
+          <p class="footer-top__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Quis ipsum suspendisse ultrices gravida.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
+            <button class="footer-top__form-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-copy">
+        © 2021 kostiantyn_tverdokhlib. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

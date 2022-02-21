@@ -9,9 +9,12 @@ $white: #ffffff;
 
 $red: #DA052D;
 
-$blue-dark: #4688BB;
 
+$blue-darkest: #28384f;
+$blue-dark: #4688BB;
+$grey-dark: #727272;
 $grey-light: #ececec;
+
 
 %quicksand-500 {
   font-family: 'Quicksand-Medium', sans-serif;
@@ -43,6 +46,7 @@ $grey-light: #ececec;
   outline: transparent;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   display: inline-block;
+  cursor: pointer;
 
   &:hover {
     background-color: $accent-hover;
@@ -53,4 +57,12 @@ $grey-light: #ececec;
   &:focus {
     color: rgba(255, 255, 255, .3);
   }
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }

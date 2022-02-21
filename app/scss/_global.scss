@@ -50,10 +50,121 @@ body {
   margin-bottom: 10px;
 }
 
+.subtitle {
+  padding-top: 75px;
+  text-transform: uppercase;
+  color: $red;
+  @extend %quicksand-500;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
 .text {
   margin: 0 auto 55px;
   max-width: 570px;
   text-align: center;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  padding-left: 25px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/home-icon.svg);
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 3px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: $grey-dark;
+    padding-right: 40px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/angle-right.svg);
+      width: 9px;
+      height: 10px;
+      right: 15px;
+      top: 8px;
+    }
+    
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.header--404-page {
+  background-color: $bg;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+
+  .pagination__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  &__link--active {
+    color: $accent;
+    @extend %quicksand-500;
+  }
+  
+  &__arrows {
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 8px;
+    }
+  }
+
+  &__prev {
+    padding-left: 15px;
+
+    &::before {
+      background-image: url(../images/icons/angle-mono-left.svg);
+      left: 0;
+      
+    }
+  }
+
+  &__next {
+    padding-right: 15px;
+
+    &::before {
+      background-image: url(../images/icons/angle-mono-right.svg);
+      right: 0;
+      
+    }
+  }
 }
 
 
