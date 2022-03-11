@@ -1,0 +1,236 @@
+.product {
+  text-align: center;
+
+  &__link {
+    @extend %btn;
+  }
+
+  &__items {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: 45px 30px;
+    margin-bottom: 60px;
+  }
+}
+
+.product-item {
+  max-width: 370px;
+  text-align: center;
+
+  &.product-item--list {
+    min-width: 100%;
+    display: flex;
+    text-align: left;
+
+    &:hover {
+      .product-item__link-box {
+        transform: translateY(-280%);
+      }
+    }
+
+    .product-item__img-box {
+      height: 250px;
+      min-width: 200px;
+      margin-bottom: 0;
+
+      img {
+        height: 250px;
+      }
+    }
+
+    .product-item__link-box {
+      background-color: transparent;
+      width: 115px;
+      box-shadow: none;
+      bottom: auto;
+
+      .product-item__link {
+        width: 50px;
+        height: 50px;
+        background-color: $bg;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product-item__link--line {
+        display: none;
+      }
+    }
+
+    .product-item__content-box {
+      display: block;
+    }
+
+    .product-item__title {
+      order: -1;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    .product-item__prices {
+      order: -1;
+      margin-bottom: 10px;
+    }
+
+    .star {
+      margin-left: 23px;
+      padding: 3px 0;
+    }
+
+    .product-item__text {
+      margin-bottom: 15px;
+    }
+
+    .product-item__btn {
+      border: none;
+      color: $white;
+      background-color: $title;
+      padding: 11px 35px;
+      outline: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s,
+        color 0.3s,
+        box-shadow 0.3s;
+      display: inline-block;
+
+      &:hover {
+        background-color: $accent;
+        box-shadow: 0px 7px 20px 0px rgba(27, 205, 217, 0.3);
+      }
+
+      &:active {
+        background-color: $firm;
+      }
+
+      &:focus {
+        color: rgba(255, 255, 255, .3);
+      }
+    }
+
+    .product-item__box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product-item__wrapper-box {
+      padding: 30px 30px;
+      border: 1px solid $grey-light;
+    }
+  }
+
+  &__content-box {
+    display: none;
+  }
+
+  &__img-box {
+    position: relative;
+    height: 370px;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__link-box {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    width: 212px;
+    height: 50px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 20%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(300px);
+    transition: transform 0.3s;
+  }
+
+  &__link--line::before,
+  &__link--line::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: $grey-light;
+    top: 10px;
+  }
+
+  &__link--line::before {
+    left: 68px;
+  }
+
+  &__link--line::after {
+    right: 73px;
+  }
+
+  &__link {
+    display: inherit;
+
+    path {
+      transition: fill 0.3s;
+    }
+  }
+
+  &__link:hover {
+
+    path {
+      fill: $red;
+    }
+  }
+
+  &:hover {
+    .product-item__link-box {
+      transform: translateY(0);
+    }
+  }
+
+  &__title {
+    color: $title;
+    font-size: 22px;
+    @extend %roboto-400;
+    padding: 10px 0;
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: center;
+    @extend %roboto-700;
+  }
+
+  &__new-price {
+    color: $title;
+    margin-right: 12px;
+  }
+
+  &__old-price {
+    color: $default;
+    text-decoration: line-through;
+  }
+}
+
+.product-item--sale {
+
+  .product-item__img-box::before {
+    content: "SALE";
+    position: absolute;
+    color: $white;
+    background-color: $red;
+    top: 25px;
+    left: 25px;
+    padding: 3px 10px;
+    box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 25%);
+  }
+}
+
+.star {
+  margin: 0 auto;
+}

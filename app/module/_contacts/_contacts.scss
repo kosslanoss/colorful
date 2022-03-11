@@ -1,0 +1,133 @@
+.map {
+  padding: 120px 0;
+}
+
+.contacts {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 370px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__title {
+    color: $title;
+    @extend %roboto-700;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
+
+  &__item--phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item-link {
+    display: block;
+    color: $title;
+    outline: transparent;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:focus {
+      color: $firm;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 30%);
+      background-color: $white;
+      background-image: url(../images/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &__item--address::before {
+    background-image: url(../images/icons/location.svg);
+  }
+
+  &__item--email::before {
+    background-image: url(../images/icons/mail.svg);
+  }
+
+  &__form {
+    padding: 60px 40px;
+    max-width: 770px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 30%);
+  }
+
+  &__form-title {
+    color: $title;
+    @extend %roboto-700;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  &__form-box {
+    display: flex;
+    justify-content: space-between;
+
+    .contacts__form-input {
+      width: 330px;
+    }
+  }
+
+  &__form-input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__form-textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    height: 200px;
+    resize: none;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__form-btn {
+    @extend %btn;
+  }
+}

@@ -1,0 +1,37 @@
+.page-404 {
+  padding: 110px 0 120px;
+
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center right;
+    position: relative;
+    height: 550px;
+    display: flex;
+  }
+
+  &__content {
+    max-width: 570px;
+    width: 100%;
+    margin: auto 0 auto;
+  }
+
+  &__title {
+    color: $blue-darkest;
+    font-size: 48px;
+    line-height: 1.8;
+    @extend %roboto-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
