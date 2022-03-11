@@ -1,0 +1,113 @@
+.footer {
+  background-color: $bg;
+}
+
+.footer-top {
+  padding: 70px 0 40px;
+  border-bottom: 1px solid $grey-light;
+  display: flex;
+
+  &__contacts {
+    max-width: 250px;
+    margin-right: 50px;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+    display: block;
+  }
+
+  &__adress,
+  &__email,
+  &__phone,
+  &__social-link {
+    margin-bottom: 13px;
+    display: block;
+  }
+
+  &__email,
+  &__phone {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__social-instagram {
+    padding-left: 10px;
+  }
+
+  &__nav {
+    max-width: 170px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 1.6;
+    @extend %roboto-400;
+    color: $title;
+  }
+
+  &__link {
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__item-form {
+    max-width: 470px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__form-input {
+    background-color: $white;
+    padding: 10px 15px 12px 15px;
+    max-width: 310px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 7px 20px 0px rgb(192 192 192 / 30%);
+
+    &::placeholder {
+      color: $default;
+    }
+  }
+
+  &__form-btn {
+    @extend %btn;
+  }
+}
+
+.footer-copy {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 12px;
+}

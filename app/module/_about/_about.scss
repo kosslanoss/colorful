@@ -1,0 +1,49 @@
+.about {
+  background-color: $bg;
+  background-image: url(../images/decor/pattern.svg);
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
+
+.popup {
+  margin-right: 60px;
+  max-width: 535px;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__play {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(125%);
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
