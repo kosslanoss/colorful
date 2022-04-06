@@ -5,6 +5,39 @@
     display: flex;
   }
 
+  &__filters-btn {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 101;
+    border-radius: 50%;
+    background-color: $accent;
+    border: none;
+    background-image: url(../images/icons/filter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    outline: transparent;
+    transition: background-color 0.3s,
+    opacity 0.3s,
+    box-shadow 0.3s;
+
+    &:hover {
+      background-color: $accent-hover;
+    }
+
+    &:active {
+      background-color: $firm;
+    }
+
+    &:focus {
+      opacity: 50%;
+    }
+  }
+
   &__filters {
     max-width: 370px;
     width: 100%;
@@ -330,4 +363,130 @@
   height: 5px;
   border: none;
   background-image: url(../images/icons/angle-down.svg)
+}
+
+@media (max-width: 1200px) {
+  .shop {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__filters {
+      max-width: 100%;
+      margin-right: 0;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: $white;
+    } 
+    
+    &__filters-btn {
+      display: block;
+    }
+  }
+
+  .filter-search {
+    &__input {
+      max-width: 100%;
+    }
+  }  
+
+  .shop-content {
+    &__inner {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__nogrid {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .shop {
+    padding: 85px 10px;
+  }
+
+  .shop-content {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .shop {
+    padding: 60px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-content {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .filter {
+    &__item {
+      padding: 20px 15px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .shop {
+    padding: 35px 10px;
+  }
+
+  .shop-content {
+    &__filter-buttons {
+      display: none;
+    }
+
+    &__filter {
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  }
+  
+  .filter-price {
+    &__label {
+      flex-wrap: wrap;
+      span {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__btn {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .filter-popular {
+    &__label {
+      margin-right: 8px;
+      margin-bottom: 10px;
+    }
+
+    &__checkbox {
+      padding: 8px 10px;
+    }
+  }
+
+  .jq-selectbox__select {
+    margin-left: 0;
+  }
 }

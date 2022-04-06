@@ -10,3 +10,21 @@
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .top {
+    &__container {
+      background-size: auto;
+      background-position: -300px 0px;
+      padding: 70px 80px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .top {
+    &__container {
+      padding: 25px 20px;
+    }
+  }
+}
