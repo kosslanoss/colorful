@@ -155,11 +155,10 @@
       &::before {
         top: 0;
       }
+    }
 
-      &:active,
-      &:focus {
-        transform: rotate(180deg);
-      }
+    &__btn--active {
+      transform: rotate(180deg);
     }
   }
 

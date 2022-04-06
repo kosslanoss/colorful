@@ -35,3 +35,58 @@
     @extend %btn;
   }
 }
+
+@media (max-width: 1200px) {
+  .page-404 {
+    &__wrapper {
+      background-size: 45%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .page-404 {
+    &__wrapper {
+      background-size: 40%;
+      background-position: 90% 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-404 {
+    padding: 70px 0 80px;
+
+    &__title {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .page-404 {
+    padding: 20px 0 25px;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .page-404 {
+    &__wrapper {
+      background-image: none !important;
+    }
+
+    &__link {
+      display: block;
+      text-align: center;
+    }
+  }
+}
