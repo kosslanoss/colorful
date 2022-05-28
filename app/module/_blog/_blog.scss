@@ -98,17 +98,13 @@
 @media (max-width: 992px) {
   .blog {
     &__items {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     &__item {
-      max-width: 100%;
-    }
-
-    &__item-img {
-      width: 100%;
+      margin: 15px;
     }
   }
 }
@@ -141,7 +137,9 @@
     }
 
     &__items {
+      display: grid;
       grid-template-columns: repeat(1, 1fr);
+      grid-gap: 25px;
     }
   }  
 }
